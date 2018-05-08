@@ -24,8 +24,8 @@
         <dd><a href="#colors">Colors</a></dd>
         <dd><a href="#layout">Layout</a></dd>
         <dd><a href="#panels">Panels</a></dd>
-        <dd><a href="#card">Card</a></dd>
-        <dd><a href="#list">List</a></dd>
+        <dd><a href="#cards">Card</a></dd>
+        <dd><a href="#lists">List</a></dd>
         <dd><a href="#table">Table</a></dd>
         <dd><a href="#forms">Forms</a></dd>
         <dd><a href="#grid">g</a></dd>
@@ -34,6 +34,7 @@
         <dd><a href="#collapsible">Collapsible</a></dd>
         <dd><a href="#typography">Typography</a></dd>
         <dd><a href="#modaltabs">Modal and Tabs</a></dd>
+        <dd><a href="#icons">Icons</a></dd>
     </dl>
 
     <hr/>
@@ -231,19 +232,19 @@
         </div>
         <pre class="code">
         <code>
-            !-- card 1 --
-            &ltdiv class="sq-card" style="height:150px; width:100px;"&gt
-                &ltdiv class="sq-info"&gt
-                    header
-                &lt/div&gt
-                                &ltdiv&gt
-                    default card
-                    &ltp&gtheader body and footer&lt/p&gt 
-                &lt/div&gt
-                &ltdiv class="sq-warning"&gt
-                    footer
-                &lt/div&gt
-            &gt/div&lt
+!-- card 1 --
+&ltdiv class="sq-card" style="height:150px; width:100px;"&gt
+&ltdiv class="sq-info"&gt
+header
+&lt/div&gt
+&ltdiv&gt
+ default card
+ &ltp&gtheader body and footer&lt/p&gt 
+&lt/div&gt
+&ltdiv class="sq-warning"&gt
+footer
+&lt/div&gt
+&gt/div&lt
             </code>
         </pre>
         <hr class="air" />
@@ -277,17 +278,17 @@
 
         <pre class="code">
                 <code>
-                    &ltdiv style:"display:flex;"&gt
-                            !--tile start --
-                                &ltdiv class="sq-tile
-                                            air
-                                            sq-tile-height
-                                            sq-tile-width"&gt
-                                            Element here.
+&ltdiv style:"display:flex;"&gt
+!--tile start --
+&ltdiv class="sq-tile
+air
+sq-tile-height
+sq-tile-width"&gt
+Element here.
             
-                                &lt/div&gt
+&lt/div&gt
             
-                            &lt/div&gt
+&lt/div&gt
                     </code>
                 </pre>
 
@@ -711,6 +712,56 @@
         <a href ="#top"></a>
     </section>
     <!--table End-->
+
+        <!--icons Start-->
+        <section>
+            <h3 id="icons">Icons</h3>
+            <p class="air"> the icons are fetched from a guy called Danklammer.</p>
+            <p class="air"> (https://github.com/danklammer/bytesize-icons#grab-n-go)</p>
+            <dl class="sq-dl sq-dl-divider">
+                <dt><strong>Classes</strong></dt>
+                <dd><strong>Size</strong> - All icons are the size of 1rem (16px)</dd>
+                <dd><strong>LINK</strong> - Follow link at the bottom of the section for ALL icons</dd>
+            </dl>
+            <!--icons visual-->
+            <div class="air">
+            <svg id="i-search" viewBox="0 0 32 32" width="1rem" height="1rem" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <circle cx="14" cy="14" r="12" />
+                <path d="M23 23 L30 30"  />
+            </svg>
+
+            <svg id="i-home" viewBox="0 0 32 32" width="1rem" height="1rem" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
+            </svg>
+        </div>
+            <!--code field-->
+            <pre class="code1">
+                <code>
+-- SEARCH ICON --
+&svg id="i-search" viewBox="0 0 32 32" 
+width="1rem" height="1rem" fill="none"
+stroke="currentcolor" stroke-linecap="round" 
+stroke-linejoin="round" stroke-width="2"&
+&circle cx="14" cy="14" r="12" /&
+&path d="M23 23 L30 30"  /&
+&/svg&
+
+-- HOME ICON--
+&svg id="i-home" viewBox="0 0 32 32" 
+width="1rem" height="1rem" fill="none" 
+stroke="currentcolor" stroke-linecap="round" 
+stroke-linejoin="round" stroke-width="2"&
+&path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" /&
+&/svg&
+                </code>
+            </pre>
+    
+            <!--link to codepen-->
+            <a href="https://codepen.io/MLaurgaard/pen/eryvMR">All Icons Here</a>
+            <hr class="air"/>
+            <a href ="#top"></a>
+        </section>
+        <!--Icons End-->
 
 
 
