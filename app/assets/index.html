@@ -178,34 +178,125 @@
         </p>
         <dl class="sq-dl sq-dl-divider" >
             <dt>Classes</dt>
-            <dd><strong></strong>-</dd>
+            <dd><strong>sq-card</strong>-Base card class with all the common functionalities.</dd>
+            <dd><strong>sq-card-header</strong> - Marks the header area of the card. </dd>
+            <dd><strong>sq-card-footer</strong>- Marks the footer area of the card.</dd>
+            <dd><strong>sq-card-body-footer</strong>- Marks the body and footer area of the card.</dd>
+            <dd><strong>sq-card-body-header</strong>- Marks the body and header area of the card.</dd>
         </dl>
         <div style="display:flex;">
-            <div class="sq-card air" style="height:150px; width:100px;">
+            <!--start card 1-->
+            <div class="sq-card" style="height:150px; width:100px;">
                 <div class="sq-info">
                     header
                 </div>
                                 <div>
-                    default card contains header body and footer
+                    default card
+                    <p>header body and footer</p> 
                 </div>
                 <div class="sq-warning">
                     footer
                 </div>
             </div>
+            <!--end card 1-->
+            <!--start card 2-->
             <div class="sq-card" style="height:150px; width:100px;">
                 <div class="sq-card-body-footer">
-                    body footer
+                     header and body
+                     <p>no footer</p>  
                 </div>
-                <div class="sq-crd-header">
+                <div class="sq-crd-header
+                            sq-info">
                     header
                 </div>
             </div>
+            <!--end card 2-->
+            <!--start card 3-->
+            <div class="sq-card" style="height:150px; width:100px;">
+                <div class="sq-card-body-header">
+                        footer and body
+                        <p>no header</p>  
+                </div>
+                <div class="sq-crd-header
+                                sq-warning">
+                    Footer
+                </div>
+            </div>
+            <!--end card 3-->
+
+            
+           
+
 
         </div>
+        <pre class="code">
+        <code>
+            !-- card 1 --
+            &ltdiv class="sq-card" style="height:150px; width:100px;"&gt
+                &ltdiv class="sq-info"&gt
+                    header
+                &lt/div&gt
+                                &ltdiv&gt
+                    default card
+                    &ltp&gtheader body and footer&lt/p&gt 
+                &lt/div&gt
+                &ltdiv class="sq-warning"&gt
+                    footer
+                &lt/div&gt
+            &gt/div&lt
+            </code>
+        </pre>
         <hr class="air" />
         <a href="#top"></a>
     </section>
     <!--cards end-->
+
+    <!--tiles start-->
+    <section>
+            <h3 id="tiles">Tiles</h3>
+            <p>
+                Base tiles.
+            </p>
+            <dl class="sq-dl sq-dl-divider" >
+                <dt>Classes</dt>
+                <dd><strong>sq-tile</strong>-Base tile class.</dd>
+                
+            </dl>
+                <div style:"display:flex;">
+                <!--tile 1-->
+                    <div class="sq-tile
+                                air
+                                sq-tile-height
+                                sq-tile-width">
+                                Element here.
+
+                    </div>
+
+                </div>
+
+
+        <pre class="code">
+                <code>
+                    &ltdiv style:"display:flex;"&gt
+                            !--tile start --
+                                &ltdiv class="sq-tile
+                                            air
+                                            sq-tile-height
+                                            sq-tile-width"&gt
+                                            Element here.
+            
+                                &lt/div&gt
+            
+                            &lt/div&gt
+                    </code>
+                </pre>
+
+    </section>
+    
+
+
+
+    <!--tiles end-->
 
     <!--Align content-->
     <section>
